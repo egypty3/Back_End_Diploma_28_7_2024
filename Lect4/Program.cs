@@ -1,4 +1,6 @@
 ﻿
+using System.Numerics;
+
 namespace Lect4
 {
 	internal class Program
@@ -7,6 +9,89 @@ namespace Lect4
 		{
 			//PrintArrayElement();
 			SeparateOddAndEven();
+			//LengthOfString();
+			//SeparateToIndividualCharacters();
+			//CountWords();
+
+			// Method Calling
+			// Method Overloading
+			Multiply(4,5);
+			Multiply(7, 9, 2);
+
+			Console.WriteLine();
+			Console.WriteLine(7);
+			Console.WriteLine(9.32);
+			Console.WriteLine();
+		}
+
+		static int Multiply(int x , int y)
+		{
+			int result = x * y;
+			return result;
+		}
+
+		static int Multiply(int x , int y,int z)
+		{
+			int result = x * y * z;
+			return result;
+		}
+
+		static double Multiply(double x, double y)
+		{
+			double result = x * y;
+			return result;
+		}
+		private static void CountWords()
+		{
+			string str;
+
+			Console.WriteLine("Input a string \n");
+			str = Console.ReadLine();
+
+			int wrdCount = 1;
+			int i = 0;
+			char prevChar = ' ' ;
+
+			while (i < str.Length)
+			{
+				if (str[i] == ' ' && prevChar != ' ')
+				{
+					wrdCount++;
+				}
+				
+				prevChar = str[i];
+				i++;
+			}
+
+			Console.WriteLine("The number of words at the string is : {0}",wrdCount);
+
+		}
+
+		private static void SeparateToIndividualCharacters()
+		{
+			string str;
+
+			Console.WriteLine("Input a string \n");
+			str = Console.ReadLine();
+			Console.WriteLine("The characters of the string are : ");
+			
+			int i = 0;
+
+			while (i < str.Length)
+			{
+				Console.WriteLine(str[i]);
+				i++;
+			}
+		}
+
+		private static void LengthOfString()
+		{
+			string str;
+
+			Console.WriteLine("Input a string \n");
+			str = Console.ReadLine();
+
+			Console.WriteLine("The length of string is {0}", str.Length);
 		}
 
 		private static void SeparateOddAndEven()
