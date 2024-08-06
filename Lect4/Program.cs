@@ -22,6 +22,9 @@ namespace Lect4
 			Console.WriteLine(7);
 			Console.WriteLine(9.32);
 			Console.WriteLine();
+			// how to create a to do list ?
+			// what is the first step ?
+
 		}
 
 		static int Multiply(int x , int y)
