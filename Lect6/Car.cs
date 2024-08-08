@@ -9,11 +9,12 @@ namespace Lect6
 {
 	internal class Car
 	{
-		public string make;
-		public string model;
-		public int yearOfManifucture;
-		public string color;
-		public int maxSpeed;
+		// Encasulation
+		private string make;
+		private	 string model;
+		private int yearOfManifucture;
+		private string color;
+		private int maxSpeed;
 
 		// constructor is a special method :
 		// 1. Cause it's name is the same as the name of the Class
@@ -25,15 +26,77 @@ namespace Lect6
 
 		}
 
-		// constructor overload
+		public void setMake(string make)
+		{
+			if (make == "")
+			{
+				Console.WriteLine("Invalid make");
+			}
+			else
+			{
+				this.make = make;
+			}
+		}
+		public void setModel(string model)
+		{
+			if (model == "")
+			{
+				Console.WriteLine("Invalid model");
+			}
+			else
+			{
+				this.model = model;
+			}
+		}
+		// set all the private fields using set... field name methods
+		public void setYearOfManifucture(int yearOfManifucture)
+		{
+			if (yearOfManifucture < 1900 || yearOfManifucture > 2022)
+			{
+				Console.WriteLine("Invalid year of manufacture");
+			}
+			else
+			{
+				this.yearOfManifucture = yearOfManifucture;
+			}
+		}
+		public void setColor(string color)
+		{
+			if (color == "")
+			{
+				Console.WriteLine("Invalid color");
+
+			}
+			else
+			{ 
+				this.color = color;
+			}
+		}
+
+
+		public void setMaxSpeed(int maxSpeed)
+		{ 
+			if (maxSpeed < 0 || maxSpeed > 300)
+			{
+				Console.WriteLine("Invalid max speed");
+			}
+			else
+			{
+				this.maxSpeed = maxSpeed;
+			}
+		}
+
+
+
+			// constructor overload
 		public Car( string make, string model, 
 			int yearOfManifucture, string color, int maxSpeed)
         {
-			this.make = make;
-			this.model = model;
-			this.yearOfManifucture = yearOfManifucture;
-			this.color = color;
-			this.maxSpeed = maxSpeed;
+			setMake( make);
+			setModel(model);
+			setYearOfManifucture(yearOfManifucture);
+			setColor(color);
+			setMaxSpeed(maxSpeed);
 		}
         public string GetCarInfo()
 		{		
