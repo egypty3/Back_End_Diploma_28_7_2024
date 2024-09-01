@@ -1,0 +1,6 @@
+@Lect13_HostAddress = http://localhost:5031
+
+GET {{Lect13_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

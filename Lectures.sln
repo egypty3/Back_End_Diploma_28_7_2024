@@ -27,7 +27,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lect11", "Lect11\Lect11.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Class-Library-Project", "Class-Library-Project\Class-Library-Project.csproj", "{C2C57E89-94DD-4E99-80BB-EF0275A6D6ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lect12", "Lect12\Lect12.csproj", "{66CD758B-6079-4011-AB49-D3DC87832099}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lect12", "Lect12\Lect12.csproj", "{66CD758B-6079-4011-AB49-D3DC87832099}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lect13", "Lect13\Lect13.csproj", "{916C9520-8F9A-4B90-8C5D-B89809546FE9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,10 @@ Global
 		{66CD758B-6079-4011-AB49-D3DC87832099}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66CD758B-6079-4011-AB49-D3DC87832099}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66CD758B-6079-4011-AB49-D3DC87832099}.Release|Any CPU.Build.0 = Release|Any CPU
+		{916C9520-8F9A-4B90-8C5D-B89809546FE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{916C9520-8F9A-4B90-8C5D-B89809546FE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{916C9520-8F9A-4B90-8C5D-B89809546FE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{916C9520-8F9A-4B90-8C5D-B89809546FE9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
